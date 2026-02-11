@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050404"
+    android:backgroundTint="#070505"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/editTextText2"
+        android:layout_width="161dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:text="Calculator"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextfirstnmbr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:ems="10"
+        android:hint="first number"
+        android:inputType="number|numberDecimal"
+        android:textColor="#DDFFFFFF"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+
+    <EditText
+        android:id="@+id/editTextlastnmbr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="last number"
+        android:inputType="number|numberDecimal"
+        android:textColor="#F6EEEE"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/editTextfirstnmbr"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextText"
+        app:layout_constraintTop_toBottomOf="@+id/editTextfirstnmbr" />
+
+    <Button
+        android:id="@+id/btntopla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="100dp"
+        android:backgroundTint="#9FBD79"
+        android:text="+"
+        app:layout_constraintEnd_toStartOf="@+id/btncix"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextlastnmbr" />
+
+    <Button
+        android:id="@+id/btncix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#D32E2E"
+        android:text="-"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btntopla"
+        app:layout_constraintTop_toTopOf="@+id/btntopla" />
+
+    <TextView
+        android:id="@+id/cavab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:text="Cavab"
+        android:textColor="#E4DEDE"
+        android:textSize="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btntopla" />
+
+    <Button
+        android:id="@+id/Hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        app:layout_constraintBottom_toTopOf="@+id/cavab"
+        app:layout_constraintEnd_toEndOf="@+id/btntopla"
+        app:layout_constraintStart_toStartOf="@+id/btntopla"
+        app:layout_constraintTop_toBottomOf="@+id/btntopla" />
+
+    <Button
+        android:id="@+id/bolme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="/"
+        app:layout_constraintBottom_toTopOf="@+id/cavab"
+        app:layout_constraintEnd_toEndOf="@+id/btncix"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/Hasil"
+        app:layout_constraintTop_toBottomOf="@+id/btncix"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
